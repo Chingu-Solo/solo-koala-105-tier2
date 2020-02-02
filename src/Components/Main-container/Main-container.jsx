@@ -20,7 +20,7 @@ const MainContainer = () => {
 		const fetchData = async () => {
 			try {
 				let getGoogleFonts = await fetch(
-					"https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyAjfp0YTzzzGDEWaGuXoN4imwRA4bTSwrM"
+					"https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyAjfp0YTzzzGDEWaGuXoN4imwRA4bTSwrM&sort=popularity"
 				);
 				let googleFonts = await getGoogleFonts.json();
 				console.log(googleFonts);
@@ -35,14 +35,13 @@ const MainContainer = () => {
 	return (
 		<main className="main-container">
 			<Toolbar />
-			<p>
-				{data.items.map(f => (
-					<div>
-						<p>{f.family}</p>
-						<p>{f.category}</p>
-					</div>
-				))}
-			</p>
+
+			{data.items.map(f => (
+				<div>
+					<p>{f.family}</p>
+					<p>{f.category}</p>
+				</div>
+			))}
 		</main>
 	);
 };
