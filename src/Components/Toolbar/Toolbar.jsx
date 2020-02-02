@@ -6,7 +6,7 @@ function Toolbar() {
 	return (
 		<section className="toolbar-container">
 			<div className="search-container">
-				<i class="material-icons">search</i>
+				<i className="material-icons">search</i>
 				<input type="text" placeholder="Search Fonts" />
 			</div>
 			<div className="sample-text-container">
@@ -14,17 +14,17 @@ function Toolbar() {
 			</div>
 			<div className="choose-size-container">
 				<button>40px</button>
-				<i class="material-icons">arrow_drop_down</i>
+				<i className="material-icons">arrow_drop_down</i>
 			</div>
 			<div className="toggle-theme-container">
-				<i class="material-icons">invert_colors</i>
+				<i className="material-icons">invert_colors</i>
 			</div>
 			<div className="toggle-view-container">
-				<i class="material-icons view-list">view_list</i>
-				<i class="material-icons view-module">view_module</i>
+				<i className="material-icons view-list">view_list</i>
+				<i className="material-icons view-module">view_module</i>
 			</div>
 			<div className="refresh">
-				<i class="material-icons">refresh</i>
+				<i className="material-icons">refresh</i>
 			</div>
 		</section>
 	);

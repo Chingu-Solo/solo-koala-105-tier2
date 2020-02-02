@@ -1,5 +1,6 @@
 :root {
 	--main-grey-color: #666666;
+	--second-grey-color: #dadce0;
 }
 
 body {
@@ -8,4 +9,8 @@ body {
 	font-family: "Roboto", sans-serif;
 	color: var(--main-grey-color);
 	font-size: 0.9rem;
+}
+
+input {
+	border: none;
 }
