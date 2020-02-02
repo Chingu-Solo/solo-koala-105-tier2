@@ -3,8 +3,8 @@ import "./Main-container.css";
 
 import Toolbar from "../Toolbar/Toolbar.jsx";
 
-/* const API_KEY = process.env.GOOGLE_FONTS_API_KEY;
-console.log(API_KEY); */
+const API_KEY = process.env.REACT_APP_GOOGLE_FONTS_API_KEY;
+console.log(API_KEY);
 
 const MainContainer = () => {
 	const [data, setData] = useState({
